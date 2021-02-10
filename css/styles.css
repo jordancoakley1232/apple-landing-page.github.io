@@ -1,0 +1,815 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+a {
+  color: lightgray;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f5f5f7;
+}
+
+.nav-container {
+  background-color: rgba(29, 29, 31, 0.924);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  width: 100%;
+  height: 2.15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-container .nav-icon {
+  color: lightgray;
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .nav-container .nav-icon {
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+.nav-container .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  list-style-type: none;
+}
+
+.nav-container .nav-links .nav-link {
+  color: #f5f5f7;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.nav-container .nav-links .nav-link a {
+  font-size: medium;
+}
+
+.nav-container .nav-links .nav-link i {
+  color: #f5f5f7;
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .nav-container .nav-links .pages {
+    display: none;
+  }
+}
+
+@media (max-width: 964px) {
+  .nav-container .nav-links {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.nav-container .nav-links .fa-apple:before {
+  font-size: large;
+}
+
+.covid {
+  background-color: #0071E3;
+  height: 2.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 2.15rem;
+}
+
+.covid .covid-message {
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.covid .covid-message .covid-icon {
+  font-size: 14px;
+}
+
+.covid .covid-message a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.advisory {
+  text-align: center;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: lightgrey;
+}
+
+.advisory .advisory-message {
+  color: #5a5f66;
+  display: inline-block;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.advisory .advisory-message a {
+  color: #06c;
+}
+
+.container {
+  margin-bottom: 0.5rem;
+}
+
+.racial-equality-container {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: black;
+  overflow: hidden;
+  background-image: url("../06fathers1-superJumbo.jpg");
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+
+.racial-equality-container .word-display {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: rgba(47, 47, 47, 0.849);
+  padding-top: 3rem;
+  color: white;
+}
+
+.racial-equality-container .word-display .header {
+  font-size: 2.5rem;
+}
+
+.racial-equality-container .word-display .header-description {
+  font-size: 1.65rem;
+}
+
+.racial-equality-container .word-display a {
+  color: #06c;
+  font-weight: bolder;
+}
+
+.iphone-container {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f5f5f7;
+  overflow: hidden;
+}
+
+.iphone-container .iphone-description-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.iphone-container .iphone-description-container .iphone-display-text {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.iphone-container .iphone-description-container .iphone-display-text .header {
+  color: #272626;
+  font-size: 2.75rem;
+}
+
+.iphone-container .iphone-description-container .iphone-display-text .header-description {
+  color: #333333;
+  font-size: 1.65rem;
+  font-weight: 580;
+}
+
+.iphone-container .iphone-description-container .iphone-display-text a {
+  color: #06c;
+}
+
+.iphone-container .iphone-description-container .iphone-image {
+  position: absolute;
+  top: 40%;
+  width: 750px;
+  height: 650px;
+}
+
+@media (max-width: 1070px) {
+  .iphone-container .iphone-description-container .iphone-image {
+    top: 30%;
+    width: 575px;
+  }
+}
+
+@media (max-width: 730px) {
+  .iphone-container .iphone-description-container .iphone-image {
+    top: 50%;
+    width: 270px;
+    height: 270px;
+  }
+}
+
+.iphone-pro-container {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  overflow: hidden;
+}
+
+.iphone-pro-container .iphone-12-description-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.iphone-pro-container .iphone-12-description-container .iphone-pro-display-text {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.iphone-pro-container .iphone-12-description-container .iphone-pro-display-text .header {
+  color: #f5f5f7;
+  font-size: 2.75rem;
+}
+
+.iphone-pro-container .iphone-12-description-container .iphone-pro-display-text .header-description {
+  color: #cacacc;
+  font-size: 1.5rem;
+}
+
+.iphone-pro-container .iphone-12-description-container .iphone-pro-display-text a {
+  color: #06c;
+  font-weight: bold;
+}
+
+.iphone-pro-container .iphone-12-description-container .iphone-12-pro-image {
+  width: 1000px;
+  height: 275px;
+  margin-left: 250px;
+  margin-top: 100px;
+}
+
+@media (max-width: 735px) {
+  .iphone-pro-container .iphone-12-description-container .iphone-12-pro-image {
+    content: url("../images/iPhone-12-Pro-vertical.png");
+    width: 275px;
+    margin-left: 0;
+    margin-top: auto;
+  }
+}
+
+.apple-watch-container {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  overflow: hidden;
+}
+
+.apple-watch-container .apple-watch-description-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.apple-watch-container .apple-watch-description-container .apple-watch-display-text {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.apple-watch-container .apple-watch-description-container .apple-watch-display-text .header {
+  color: #f5f5f7;
+  font-size: 2.75rem;
+}
+
+.apple-watch-container .apple-watch-description-container .apple-watch-display-text .header .icon {
+  font-size: 2.75rem;
+}
+
+.apple-watch-container .apple-watch-description-container .apple-watch-display-text .header-label {
+  color: #bd1e1e;
+  font-size: 1rem;
+}
+
+.apple-watch-container .apple-watch-description-container .apple-watch-display-text .header-description {
+  color: #f5f5f7;
+  font-size: 1.5rem;
+}
+
+.apple-watch-container .apple-watch-description-container .apple-watch-display-text .header-link {
+  margin-top: 0.5rem;
+}
+
+.apple-watch-container .apple-watch-description-container .apple-watch-display-text a {
+  color: #06c;
+  font-weight: bold;
+}
+
+.apple-watch-container .apple-watch-image {
+  width: 250px;
+  margin-top: 3rem;
+}
+
+.first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.first-row .ipad-air-container {
+  height: 600px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f5f5f7;
+}
+
+.first-row .ipad-air-container .ipad-air-description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 1064px) {
+  .first-row .ipad-air-container .ipad-air-description-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.first-row .ipad-air-container .ipad-air-display-text {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.first-row .ipad-air-container .ipad-air-display-text .header {
+  color: #272626;
+  font-size: 2.75rem;
+}
+
+.first-row .ipad-air-container .ipad-air-display-text .header-description {
+  color: #272626;
+  font-size: 1.2rem;
+}
+
+.first-row .ipad-air-container .ipad-air-display-text .header-link {
+  margin-top: 0.5rem;
+}
+
+.first-row .ipad-air-container .ipad-air-display-text .header-link a {
+  color: #06c;
+  font-weight: lighter;
+}
+
+@media (max-width: 1064px) {
+  .first-row .ipad-air-container .ipad-air-display-text {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.first-row .ipad-air-container .apple-watch-image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 575px;
+  margin-top: 3.1rem;
+}
+
+@media (max-width: 1064px) {
+  .first-row .ipad-air-container .apple-watch-image {
+    content: url("../images/iPad-air-vertical.png");
+    width: 200px;
+    height: 250px;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 735px) {
+  .first-row .ipad-air-container {
+    width: 100%;
+  }
+}
+
+.first-row .macbook-air-container {
+  height: 600px;
+  width: 50%;
+  overflow: hidden;
+  background-color: black;
+}
+
+.first-row .macbook-air-container .macbook-description-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.first-row .macbook-air-container .macbook-description-container .macbook-display-text {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.first-row .macbook-air-container .macbook-description-container .macbook-display-text .header {
+  color: #f5f5f7;
+  font-size: 2.75rem;
+}
+
+.first-row .macbook-air-container .macbook-description-container .macbook-display-text .header-description {
+  color: #cacacc;
+  font-size: 1.5rem;
+}
+
+.first-row .macbook-air-container .macbook-description-container .macbook-display-text a {
+  color: #06c;
+  font-weight: bold;
+}
+
+.first-row .macbook-air-container .macbook-description-container .macbook-image {
+  width: 850px;
+  height: 350px;
+  margin-top: 3rem;
+}
+
+@media (max-width: 735px) {
+  .first-row .macbook-air-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 735px) {
+  .first-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.second-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 735px) {
+  .second-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.second-row .airpod-container {
+  height: 600px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  overflow: hidden;
+}
+
+@media (max-width: 735px) {
+  .second-row .airpod-container {
+    width: 100%;
+  }
+}
+
+.second-row .airpod-container .airpod-description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.second-row .airpod-container .airpod-display-text {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.second-row .airpod-container .airpod-display-text .header {
+  color: #f5f5f7;
+  font-size: 2.75rem;
+}
+
+.second-row .airpod-container .airpod-display-text .header-description {
+  color: #f5f5f7;
+  font-size: 1.2rem;
+}
+
+.second-row .airpod-container .airpod-display-text .header-link {
+  margin-top: 0.5rem;
+}
+
+.second-row .airpod-container .airpod-display-text .header-link a {
+  color: #06c;
+  font-weight: lighter;
+}
+
+.second-row .airpod-container .airpod-image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 575px;
+}
+
+.second-row .apple-watch-se-container {
+  height: 600px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f5f5f7;
+  overflow: hidden;
+}
+
+@media (max-width: 735px) {
+  .second-row .apple-watch-se-container {
+    width: 100%;
+  }
+}
+
+.second-row .apple-watch-se-container .apple-watch-se-description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.second-row .apple-watch-se-container .apple-watch-se-display-text {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.second-row .apple-watch-se-container .apple-watch-se-display-text .header {
+  color: black;
+  font-size: 1.75rem;
+}
+
+.second-row .apple-watch-se-container .apple-watch-se-display-text .header .icon {
+  font-size: 1.75rem;
+}
+
+.second-row .apple-watch-se-container .apple-watch-se-display-text .header-label {
+  color: #bd1e1e;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.second-row .apple-watch-se-container .apple-watch-se-display-text .header-description {
+  color: #333333;
+  font-size: 1.2rem;
+}
+
+.second-row .apple-watch-se-container .apple-watch-se-display-text .header-link {
+  margin-top: 0.5rem;
+}
+
+.second-row .apple-watch-se-container .apple-watch-se-display-text .header-link a {
+  color: #06c;
+  font-weight: lighter;
+}
+
+.second-row .apple-watch-se-container .apple-watch-se-image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 575px;
+  margin-top: 2rem;
+}
+
+.footer-container {
+  width: 100%;
+  background-color: #e4e4e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-container a {
+  color: #06c;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-container .footer-content-container {
+  width: 1000px;
+  margin: 0 1rem;
+}
+
+.footer-container .footer-content-container .notices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.75em;
+  height: 3rem;
+  border-bottom: 1px solid #d2d2d7;
+  color: #86868b;
+  font-weight: bold;
+}
+
+.footer-container .footer-content-container .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-container .footer-content-container .options .shop-and-learn-container {
+  margin-right: 5rem;
+}
+
+.footer-container .footer-content-container .options .services-container {
+  margin-right: 5rem;
+}
+
+.footer-container .footer-content-container .copyright .find-a-store {
+  border-bottom: 1px solid #d2d2d7;
+}
+
+.footer-container .footer-content-container .copyright .fine-print {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .footer-container .footer-content-container .copyright .fine-print {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer-container .footer-content-container .copyright .fine-print .legal-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 400px;
+}
+
+.footer-container .footer-content-container .copyright .fine-print a {
+  color: #86868b;
+  border-right: 1px solid #d2d2d7;
+}
+
+.footer-container .title {
+  font-size: 16px;
+  font-weight: 600px;
+  margin-bottom: 0.5rem;
+}
+
+.footer-container .list {
+  list-style-type: none;
+}
+
+.footer-container .list .item {
+  color: #515154;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.footer-container .list .item a {
+  color: #86868b;
+  font-weight: normal;
+}

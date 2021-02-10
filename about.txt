@@ -1,0 +1,11 @@
+This will be a clone of Apple.com landing page. 
+Page will be created with basic HTML, CSS, SASS and Javascript
+
+
+Fonts to use
+-SF Pro
+
+
+
+Steps
+1. Make Nav bar and make it responsive
